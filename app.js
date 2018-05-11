@@ -22,11 +22,11 @@ fs.readFile('index.html', (err, html) => {
 });
 
 //node modules
-const fs = require('fs');
+//const fs = require('fs');
 const request = require('request');
 const keys = require('keys');
 const twitter = require('twitter');
-const spofity = require('spofity');
+//const spotify = require('spotify');
 const cmd = process.argv[2];
 
 //possible cmds
@@ -41,7 +41,7 @@ switch (cmd) {
     omdb();
     break;
   case "do":
-    do();
+    doIt();
     break;
     //instructions
   default:
@@ -62,16 +62,25 @@ function tweets() {
     consumer_secret: keys.twitterKeys.consumer_secret,
     access_token_key: keys.twitterKeys.access_token_key,
     access_token_secret: keys.twitterKeys.access_token_secret,
-
   });
+
   let userName = process.argv[3];
   if (!userName) {
     userName = 'ben_codes';
   }
-  let params = {screen_name: ''};
+
+  let params = {screen_name: userName};
   client.get('statuses/user_timeline', params, (error, tweets, response) =>  {
     if(!error) {
-      console.log(tweets);
+      for (var i = 0; i < tweets.length; i++) {
+        let results =
+        "@" + tweets[i].user.screen_name + ":" + tweets[i].text + '\n' +
+        "==========" + data[i].created_at + "==========" + '\n';
+        console.log(results);
+      }
+    } else {
+      console.log("error");
+      return;
     }
   });
 };
@@ -79,5 +88,33 @@ function tweets() {
 //spotify
 function spotify(songName) {
   let songName = process.argv[3];
+    if (!songName) {
+      songName = "Rocket Man";
+    }
+  spotify.search({type: 'track', query: songName}, (err, data) => {
+    if(err) {
+      console.log("Error: " + err);
+    } else {
+      let results = data.tracks.items;
+      for (var i = 0; i < 10; i++) {
+        //TODO
+      }
 
+    }
+  })
 }
+
+//omdb
+
+
+//doit --readFile
+function doIt() {
+  fs.readFile("random.txt", "utf8", function(error, data){
+    if (!error) {
+      let doItResults = data.split(",");
+      spotifyThisSong(doItResults[0], doItResults[1]);
+    } else {
+      console.log("Error: " + error);
+    }
+  });
+};
