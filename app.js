@@ -56,10 +56,6 @@ switch (cmd) {
 //functions
 
 //tweets
-consumer_key: 'yN2KoMEu65aBFGl6IICgX98KS',
-consumer_secret: 'C20QqMoavq6co5cxgXNBM42hvwLCGoeUylfSFApU2NseQJi88H',
-acces_token_key: '993590503169052679-zKlkHnD8ZMS7la3Lkeq8x6rEowhKmk4',
-access_token_secret: 'LXXLAikcPb9bxmp3A0UDt8JYQvZ7XQuws3kgdU4PSlMui',
 function tweets() {
   let client = new twitter({
     consumer_key: keys.twitterKeys.consumer_key,
@@ -80,4 +76,8 @@ function tweets() {
   });
 };
 
-//
+//spotify
+function spotify(songName) {
+  let songName = process.argv[3];
+
+}
