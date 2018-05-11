@@ -24,9 +24,9 @@ fs.readFile('index.html', (err, html) => {
 //node modules
 //const fs = require('fs');
 const request = require('request');
-const keys = require('keys');
+const keys = require('./keys');
 const twitter = require('twitter');
-//const spotify = require('spotify');
+const spotify = require('spotify');
 const cmd = process.argv[2];
 
 //possible cmds
@@ -57,7 +57,7 @@ switch (cmd) {
 
 //tweets
 function tweets() {
-  let client = new twitter({
+  var client = new twitter({
     consumer_key: keys.twitterKeys.consumer_key,
     consumer_secret: keys.twitterKeys.consumer_secret,
     access_token_key: keys.twitterKeys.access_token_key,
@@ -79,7 +79,7 @@ function tweets() {
         console.log(results);
       }
     } else {
-      console.log("error");
+      console.log("error: " + error);
       return;
     }
   });
@@ -87,22 +87,32 @@ function tweets() {
 
 //spotify
 function spotify(songName) {
-  let songName = process.argv[3];
+  var songName = process.argv[3];
     if (!songName) {
       songName = "Rocket Man";
     }
+  params = songName;
   spotify.search({type: 'track', query: songName}, (err, data) => {
     if(err) {
       console.log("Error: " + err);
+      return;
     } else {
       let results = data.tracks.items;
       for (var i = 0; i < 10; i++) {
-        //TODO
+        if (data[i] != undefined) {
+          var spotifyResults =
+          "Artist: " + results[i].artists[0].name + '\n' +
+          "Song: " + results[i].name + '\n' +
+          "Album: " + results[i].album.name + '\n' +
+          "Preview: " + results[i].preview_url + '\n' +
+          "==========" + i + "==========" + '\n';
+          console.log(spotifyResults);
+        }
       }
 
     }
-  })
-}
+  });
+};
 
 //omdb
 
