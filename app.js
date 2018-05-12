@@ -1,31 +1,31 @@
 //server
-const hostname = '127.0.0.1';
-const port = 3000;
-const fs = require('fs');
-const http = require('http');
-fs.readFile('index.html', (err, html) => {
-  if (err) {
-    throw err;
-  }
-  const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-type', 'text/plain');
-    res.write(html);
-    res.end();
-
-  });
-
-  server.listen(port, hostname, () => {
-    console.log('Server started on port ' + port);
-  });
-
-});
+// const hostname = '127.0.0.1';
+// const port = 3000;
+// const fs = require('fs');
+// const http = require('http');
+// fs.readFile('index.html', (err, html) => {
+//   if (err) {
+//     throw err;
+//   }
+//   const server = http.createServer((req, res) => {
+//     res.statusCode = 200;
+//     res.setHeader('Content-type', 'text/plain');
+//     res.write(html);
+//     res.end();
+//
+//   });
+//
+//   server.listen(port, hostname, () => {
+//     console.log('Server started on port ' + port);
+//   });
+//
+// });
 
 //node modules
 const request = require('request');
 const keys = require('./keys');
 const twitter = require('twitter');
-const spotify = require('spotify');
+var spotify = require('spotify');
 const client = new twitter(keys.twitterKeys);
 const cmd = process.argv[2];
 
@@ -115,22 +115,24 @@ function spotify(songName) {
 };
 
 //omdb
-function omdb(movie) {
-  const movie = process.argv[3];
-  var omdbURL = 'http://www.omdbapi.com/?t=' + movie + '&plot=short&tomatoes=true';
+function omdb() {
+  let movie = process.argv[4];
+  var omdbURL = 'http://www.omdbapi.com/?t=' + '"' + movie + '"' + '&y=&plot=short&apikey=trilogy';
 
-  request(omdbURL, (error, response, body) => {
+  request(omdbURL, function(error, response, body) {
     if(!error && response.statusCode === 200) {
       var body = JSON.parse(body);
+      for (var i = 0; i < 3; i++) {
       console.log("Title: " + body.Title + '\n' +
                   "Release Year: " + body.Year + '\n' +
                   "Plot: " + body.Plot + '\n' +
-                  "Rotten Tomatoes Rating: " + body.tomatoRating + '\n' +
-                  "Rotten Tomatoes URL: " + body.tomatoURL + '\n' +
+                  "Rotten Tomatoes Rating: " + body.Ratings.tomatoRating + '\n' +
+                  "URL: " + body.Website + '\n' +
                   "==========" + i + "===========");
-              console.log("yes");
     }
-  })
+    //console.log(body);
+  }
+});
 }
 
 //doit --readFile
