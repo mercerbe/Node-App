@@ -22,11 +22,11 @@ fs.readFile('index.html', (err, html) => {
 });
 
 //node modules
-//const fs = require('fs');
 const request = require('request');
 const keys = require('./keys');
 const twitter = require('twitter');
 const spotify = require('spotify');
+const client = new twitter(keys.twitterKeys);
 const cmd = process.argv[2];
 
 //possible cmds
@@ -115,7 +115,23 @@ function spotify(songName) {
 };
 
 //omdb
+function omdb(movie) {
+  const movie = process.argv[3];
+  var omdbURL = 'http://www.omdbapi.com/?t=' + movie + '&plot=short&tomatoes=true';
 
+  request(omdbURL, (error, response, body) => {
+    if(!error && response.statusCode === 200) {
+      var body = JSON.parse(body);
+      console.log("Title: " + body.Title + '\n' +
+                  "Release Year: " + body.Year + '\n' +
+                  "Plot: " + body.Plot + '\n' +
+                  "Rotten Tomatoes Rating: " + body.tomatoRating + '\n' +
+                  "Rotten Tomatoes URL: " + body.tomatoURL + '\n' +
+                  "==========" + i + "===========");
+              console.log("yes");
+    }
+  })
+}
 
 //doit --readFile
 function doIt() {
