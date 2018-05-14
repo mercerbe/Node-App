@@ -126,11 +126,14 @@ function omdb() {
       console.log("Title: " + body.Title + '\n' +
                   "Release Year: " + body.Year + '\n' +
                   "Plot: " + body.Plot + '\n' +
-                  "Rotten Tomatoes Rating: " + body.Ratings.tomatoRating + '\n' +
+                  "Country of Production: " + body.Country + '\n' +
+                  "Language: " + body.Language + '\n' +
+                  "Imbd Rating: " + body.imdbRating + '\n' +
+                  "Rotten Tomatoes Rating: " + body.Ratings[1].Value[0] + '\n' +
                   "URL: " + body.Website + '\n' +
                   "==========" + i + "===========");
     }
-    //console.log(body);
+    console.log(body);
   }
 });
 }
