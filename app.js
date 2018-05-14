@@ -122,7 +122,7 @@ function omdb() {
   request(omdbURL, function(error, response, body) {
     if(!error && response.statusCode === 200) {
       var body = JSON.parse(body);
-      for (var i = 0; i < 3; i++) {
+      for (var i = 0; i < 1; i++) {
       console.log("Title: " + body.Title + '\n' +
                   "Release Year: " + body.Year + '\n' +
                   "Plot: " + body.Plot + '\n' +

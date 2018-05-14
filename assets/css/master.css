@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after, {
+  box-sizing: inherit;
+}
+
+body{
+    min-height: 100%;
+    min-width: 100%;
+    box-sizing: inherit;
+    position: relative;
+}
+
+#footer {
+  margin-top: 1%;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: black;
+  padding: 1% 0% 0% 0%;
+  z-index: 1;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 500px) {
+  #footer {
+    margin-bottom: -200px;
+  }
+  body {
+    margin-bottom: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #footer {
+    bottom: -200px;
+  }
+  body {}
+}
+
+@media only screen and (min-width: 769px) {
+  #footer {
+    bottom: -300px;
+  }
+  body {}
+}
