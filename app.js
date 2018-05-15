@@ -26,10 +26,10 @@ require("dotenv").config();
 const fs = require('fs');
 const request = require('request');
 const keys = require('./keys');
-const twitter = require('twitter');
+const Twitter = require('Twitter');
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
-const client = new twitter(keys.twitterKeys);
+const client = new Twitter(keys.twitterKeys);
 const cmd = process.argv[2];
 
 //stored arg array
@@ -73,7 +73,6 @@ switch (cmd) {
 
 //tweets
 function tweets() {
-
   let userName = 'ben_codes';
   let params = {screen_name: userName};
   client.get('statuses/user_timeline', params, (error, tweets, response) =>  {
@@ -88,7 +87,7 @@ function tweets() {
         fs.appendFile('log.txt', space);
       }
     } else {
-      console.log("error: " + JSON.stringify(error));
+      console.log("error: " + JSON.stringify(error, null, 2));
       return;
     }
   });
@@ -97,21 +96,22 @@ function tweets() {
 //spotify
 function spotifySong() {
   var song = process.argv[3];
-  spotify.search({type: 'track', query: song}, (err, data) => {
+  spotify.search({type: 'track', query: song, limit: 1}, (err, data) => {
       if (song === "") {
         let song = "The Sign";
       }
     if(err) {
       console.log("Error: " + err);
     } else {
-      for (var i = 0; i < data.tracks.items.length; i++) {
+      console.log(JSON.stringify(data, null, 2));
+      for (var i = 0; i < data.length; i++) {
       let results = data.tracks.items[i];
           var spotifyResults =
-          "Artist: " + results[i].artists[0].name + '\n' +
-          "Song: " + results[i].name + '\n' +
-          "Album: " + results[i].album.name + '\n' +
-          "Preview: " + results[i].preview_url + '\n' +
-          "==========" + i + "==========" + '\n';
+          "Artist: " + results[i].album.artists.name + '\n' + 
+          // "Song: " + results[i].name + '\n' +
+          // "Album: " + results[i].album.name + '\n' +
+          // "Preview: " + results[i].preview_url + '\n' +
+          // "==========" + i + "==========" + '\n';
           console.log(spotifyResults);
       }
     }
