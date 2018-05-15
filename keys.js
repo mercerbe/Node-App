@@ -1,9 +1,3 @@
-
-  const  TWITTER_CONSUMER_KEY = 'yN2KoMEu65aBFGl6IICgX98KS';
-  const  TWITTER_CONSUMER_SECRET ='C20QqMoavq6co5cxgXNBM42hvwLCGoeUylfSFApU2NseQJi88H';
-  const  TWITTER_ACCESS_TOKEN_KEY = '993590503169052679-zKlkHnD8ZMS7la3Lkeq8x6rEowhKmk4';
-  const  TWITTER_ACCESS_TOKEN_SECRET = 'LXXLAikcPb9bxmp3A0UDt8JYQvZ7XQuws3kgdU4PSlMui';
-
 console.log('this is loaded');
 
 exports.twitter = {

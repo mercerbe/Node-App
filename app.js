@@ -22,10 +22,13 @@
 // });
 
 //node modules
+const fs = require('fs');
+require("dotenv").config();
 const request = require('request');
 const keys = require('./keys');
 const twitter = require('twitter');
-var spotify = require('spotify');
+var Spotify = require('node-spotify-api');
+var spotifyClient = new Spotify(keys.spotify);
 const client = new twitter(keys.twitterKeys);
 const cmd = process.argv[2];
 
@@ -35,7 +38,7 @@ switch (cmd) {
     tweets();
     break;
   case "spotify":
-    spotify();
+    spotifySong();
     break;
   case "omdb":
     omdb();
@@ -57,12 +60,6 @@ switch (cmd) {
 
 //tweets
 function tweets() {
-  var client = new twitter({
-    consumer_key: keys.twitterKeys.consumer_key,
-    consumer_secret: keys.twitterKeys.consumer_secret,
-    access_token_key: keys.twitterKeys.access_token_key,
-    access_token_secret: keys.twitterKeys.access_token_secret,
-  });
 
   let userName = process.argv[3];
   if (!userName) {
@@ -86,10 +83,10 @@ function tweets() {
 };
 
 //spotify
-function spotify(songName) {
+function spotifySong(songName) {
   var songName = process.argv[3];
     if (!songName) {
-      songName = "Rocket Man";
+      songName = "The Sign";
     }
   params = songName;
   spotify.search({type: 'track', query: songName}, (err, data) => {
@@ -129,7 +126,7 @@ function omdb() {
                   "Country of Production: " + body.Country + '\n' +
                   "Language: " + body.Language + '\n' +
                   "Imbd Rating: " + body.imdbRating + '\n' +
-                  "Rotten Tomatoes Rating: " + body.Ratings[1].Value[0] + '\n' +
+                  "Rotten Tomatoes Rating: " + body.Ratings[1]+ '\n' +
                   "URL: " + body.Website + '\n' +
                   "==========" + i + "===========");
     }
