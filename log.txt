@@ -107,3 +107,27 @@ Imbd Rating: 7.3
 Rotten Tomatoes Rating: [object Object]
 URL: http://www.rottentomatoes.com/m/bambi/
 ==========0===========
+Title: Bambi
+Release Year: 1942
+Plot: The story of a young deer growing up in the forest.
+Country of Production: USA
+Language: English
+Imbd Rating: 7.3
+Rotten Tomatoes Rating: [object Object]
+URL: http://www.rottentomatoes.com/m/bambi/
+==========0===========
+Title: Bambi
+Release Year: 1942
+Plot: The story of a young deer growing up in the forest.
+Country of Production: USA
+Language: English
+Imbd Rating: 7.3
+Rotten Tomatoes Rating: [object Object]
+URL: http://www.rottentomatoes.com/m/bambi/
+==========0===========
+Song: The Sign
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Track Number: 4
+Release Date: 1993
+====================
