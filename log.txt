@@ -1,58 +1,10 @@
-Title: Field of Dreams
-Release Year: 1989
-Plot: An Iowa corn farmer, hearing voices, interprets them as a command to build a baseball diamond in his fields; he does, and the 1919 Chicago White Sox come.
-Country of Production: USA
-Language: English
-Imbd Rating: 7.5
-Rotten Tomatoes Rating: undefined
-URL: http://www.rottentomatoes.com/m/field_of_dreams/
-==========0===========Title: Field of Dreams
-Release Year: 1989
-Plot: An Iowa corn farmer, hearing voices, interprets them as a command to build a baseball diamond in his fields; he does, and the 1919 Chicago White Sox come.
-Country of Production: USA
-Language: English
-Imbd Rating: 7.5
-Rotten Tomatoes Rating: undefined
-URL: http://www.rottentomatoes.com/m/field_of_dreams/
-==========0===========Title: Field of Dreams
-Release Year: 1989
-Plot: An Iowa corn farmer, hearing voices, interprets them as a command to build a baseball diamond in his fields; he does, and the 1919 Chicago White Sox come.
-Country of Production: USA
-Language: English
-Imbd Rating: 7.5
-Rotten Tomatoes Rating: undefined
-URL: http://www.rottentomatoes.com/m/field_of_dreams/
-==========0===========Song: Broken Halos
-Artist: Chris Stapleton
-Album: From A Room: Volume 1
-Track Number: 1
-Release Date: 2017-05-05
-==========0==========
-Song: Broken Halos
-Artist: Chris Stapleton
-Album: From A Room: Volume 1
-Track Number: 1
-Release Date: 2017-05-05
-==========0==========
-Song: Broken Halos
-Artist: Chris Stapleton
-Album: From A Room: Volume 1
-Track Number: 1
-Release Date: 2017-05-05
-==========0==========
-Song: Broken Halos
-Artist: Chris Stapleton
-Album: From A Room: Volume 1
-Track Number: 1
-Release Date: 2017-05-05
-Preview: null
-==========0==========
-Song: Broken Halos
-Artist: Chris Stapleton
-Album: From A Room: Volume 1
-Track Number: 1
-Release Date: 2017-05-05
-==========0==========
+
+Song: The Sign
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Track Number: 4
+Release Date: 1993
+====================
 Song: Broken Halos
 Artist: Chris Stapleton
 Album: From A Room: Volume 1
@@ -83,128 +35,21 @@ Album: 2018 Award Nominees
 Track Number: 16
 Release Date: 2018-01-19
 ==========4==========
-Song: Broken Halos
-Artist: Chris Stapleton
-Album: From A Room: Volume 1
-Track Number: 1
-Release Date: 2017-05-05
-==========0==========
-Song: Broken Halos
-Artist: Chris Stapleton
-Album: Country Spring Hits
-Track Number: 3
-Release Date: 2018-04-13
-==========2==========
-Song: Broken Halos
-Artist: Chris Stapleton
-Album: 2018 Award Nominees
-Track Number: 16
-Release Date: 2018-01-19
-==========4==========
-Title: Snakes
-Release Year: 1974
-Plot: A snake lover sends out venomous snakes and reptiles to kill his enemies.
+If you haven't watched 'Mr. Nobody', then you should: http://www.imdb.com/title/tt0485947/ 
+It's on Netflix!
+=====================
+Title: Field of Dreams
+Release Year: 1989
+Plot: An Iowa corn farmer, hearing voices, interprets them as a command to build a baseball diamond in his fields; he does, and the 1919 Chicago White Sox come.
 Country of Production: USA
 Language: English
-Imbd Rating: 6.1
-URL: http://www.rottentomatoes.com/m/snakes_1974/
-==========0===========Title: undefined
-Release Year: undefined
-Plot: undefined
-Country of Production: undefined
-Language: undefined
-Imbd Rating: undefined
-URL: undefined
-==========0===========Title: undefined
-Release Year: undefined
-Plot: undefined
-Country of Production: undefined
-Language: undefined
-Imbd Rating: undefined
-URL: undefined
-==========0===========Title: undefined
-Release Year: undefined
-Plot: undefined
-Country of Production: undefined
-Language: undefined
-Imbd Rating: undefined
-URL: undefined
-==========0===========Title: undefined
-Release Year: undefined
-Plot: undefined
-Country of Production: undefined
-Language: undefined
-Imbd Rating: undefined
-URL: undefined
-==========0===========Title: Bambi
-Release Year: 1942
-Plot: The story of a young deer growing up in the forest.
-Country of Production: USA
-Language: English
-Imbd Rating: 7.3
-URL: http://www.rottentomatoes.com/m/bambi/
-==========0===========Title: Bambi
-Release Year: 1942
-Plot: The story of a young deer growing up in the forest.
-Country of Production: USA
-Language: English
-Imbd Rating: 7.3
+Imbd Rating: 7.5
 Rotten Tomatoes Rating: [object Object]
-URL: http://www.rottentomatoes.com/m/bambi/
-==========0===========Title: Bambi
-Release Year: 1942
-Plot: The story of a young deer growing up in the forest.
-Country of Production: USA
-Language: English
-Imbd Rating: 7.3
-Rotten Tomatoes Rating: [object Object]
-URL: http://www.rottentomatoes.com/m/bambi/
-==========0===========Title: Bambi
-Release Year: 1942
-Plot: The story of a young deer growing up in the forest.
-Country of Production: USA
-Language: English
-Imbd Rating: 7.3
-Rotten Tomatoes Rating: undefined
-URL: http://www.rottentomatoes.com/m/bambi/
-==========0===========Title: Bambi
-Release Year: 1942
-Plot: The story of a young deer growing up in the forest.
-Country of Production: USA
-Language: English
-Imbd Rating: 7.3
-Rotten Tomatoes Rating: [object Object]
-URL: http://www.rottentomatoes.com/m/bambi/
-==========0===========Title: Mr. Nobody
-Release Year: 2009
-Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
-Country of Production: Belgium, Germany, Canada, France, USA, UK
-Language: English, Mohawk
-Imbd Rating: 7.9
-Rotten Tomatoes Rating: [object Object]
-URL: http://www.rottentomatoes.com/m/mr-nobody/
-==========0===========Title: Undefined
-Release Year: 2014
-Plot: N/A
-Country of Production: Lebanon
-Language: Arabic
-Imbd Rating: N/A
-Rotten Tomatoes Rating: undefined
-URL: N/A
-==========0===========Title: Undefined
-Release Year: 2014
-Plot: N/A
-Country of Production: Lebanon
-Language: Arabic
-Imbd Rating: N/A
-Rotten Tomatoes Rating: undefined
-URL: N/A
-==========0===========Title: Undefined
-Release Year: 2014
-Plot: N/A
-Country of Production: Lebanon
-Language: Arabic
-Imbd Rating: N/A
-Rotten Tomatoes Rating: undefined
-URL: N/A
+URL: http://www.rottentomatoes.com/m/field_of_dreams/
 ==========0===========
+If you haven't watched 'Mr. Nobody', then you should: http://www.imdb.com/title/tt0485947/ 
+It's on Netflix!
+=====================
+If you haven't watched 'Mr. Nobody', then you should: http://www.imdb.com/title/tt0485947/ 
+It's on Netflix!
+=====================
