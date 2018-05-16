@@ -129,20 +129,23 @@ function omdb() {
   var movie = process.argv[3];
   if (typeof movie === 'undefined') {
     let movie = "'Mr. Nobody'";
-    console.log(movie);
     var omdbURL = 'http://www.omdbapi.com/?t=' + movie + '&y=&plot=short&tomatoes=true&apikey=trilogy';
     request(omdbURL, function(error, response, body) {
       if (!error && response.statusCode === 200) {
         var body = JSON.parse(body);
-        //console.log(body);
-        for (var i = 0; i < 1; i++) {
-          if (movie === "'Mr. Nobody'") {
             let results = "If you haven't watched 'Mr. Nobody', then you should: http://www.imdb.com/title/tt0485947/ " + '\n' +
               "It's on Netflix!" + '\n' +
               "=====================" + '\n';
             fs.appendFile('log.txt', results);
             console.log(results);
-          } else {
+      };
+    });
+  } else {
+    var omdbURL = 'http://www.omdbapi.com/?t=' + movie + '&y=&plot=short&tomatoes=true&apikey=trilogy';
+    request(omdbURL, function(error, response, body) {
+      if (!error && response.statusCode === 200) {
+        var body = JSON.parse(body);
+        for (var i = 0; i < 1; i++) {
             let results = "Title: " + body.Title + '\n' +
               "Release Year: " + body.Year + '\n' +
               "Plot: " + body.Plot + '\n' +
@@ -154,7 +157,6 @@ function omdb() {
               "==========" + i + "===========" + '\n';
             console.log(results);
             fs.appendFile('log.txt', results);
-          }
         }
       }
     });
