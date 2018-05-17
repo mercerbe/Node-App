@@ -9,7 +9,7 @@ const request = require('request');
 //twitter
 const Twitter = require('twitter');
 const keys = require('./keys');
-const client = new Twitter(keys.twitterKeys);
+const client = new Twitter(keys.twitter);
 //spotify
 const Spotify = require('node-spotify-api');
 const spotify = new Spotify(keys.spotify);
@@ -77,7 +77,7 @@ function getTweets() {
   let params = {q: '@ben_codes', count: 5};
   client.get('statuses/user_timeline', params, (error, tweets, response) => {
     if (!error) {
-      for (var i = 0; i < tweets.statuses.length; i++) {
+      for (var i = 0; i < tweets.length; i++) {
         let date = tweets[i].created_at;
         let tweet = "@ben_codes: " + tweets[i].text + "created at: " + date;
         let space = "==========" + i + "==========" + '\n';
