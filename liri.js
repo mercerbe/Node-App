@@ -32,7 +32,7 @@ var arg = "";
 function getArg() {
   argArray = process.argv;
   for (let i = 3; i < argArray.length; i++) {
-    arg += argArray[i];
+    arg += argArray[i] + "+";
   }
   return arg;
 }
@@ -41,6 +41,8 @@ action(cmd, arg);
 
 //ACTION FNCTN-->
 function action(cmd, arg) {
+  arg = getArg();
+  console.log(arg);
   //switch
   switch (cmd) {
     case "tweets":
@@ -117,16 +119,13 @@ function getSong(songName) {
         "==========" + i + "==========" + '\n';
       console.log(spotifyResults);
       fs.appendFile('log.txt', spotifyResults);
+      logOutput(spotifyResults);
     }
   });
 }
 //default song
 function showSpecificSong() {
   spotify.request('https://api.spotify.com/v1/tracks/0hrBpAOgrt8RXigk83LLNE').then(function(data) {
-    // if(err) {
-    //   console.log("Error: " + err);
-    //   return;
-    // }
     let results = data;
     let spotifyResults =
       "Song: " + results.name + '\n' +
@@ -147,6 +146,16 @@ function getMovie(movieTitle) {
   request(omdbURL, function(error, response, body) {
     if(!error && response.statusCode === 200) {
       var movie = JSON.parse(body);
+      if(movieTitle === "Mr. Nobody") {
+        let results =
+          "If you haven't watched 'Mr. Nobody', then you should: http://www.imdb.com/title/tt0485947/ " + '\n' +
+          "It's on Netflix!" + '\n' +
+          "=====================" + '\n';
+        fs.appendFile('log.txt', results);
+        console.log(results);
+        logOutput(results);
+
+      } else {
       let results =
         "Title: " + movie.Title + '\n' +
         "Release Year: " + movie.Year + '\n' +
@@ -154,13 +163,13 @@ function getMovie(movieTitle) {
         "Country of Production: " + movie.Country + '\n' +
         "Language: " + movie.Language + '\n' +
         "Imbd Rating: " + movie.imdbRating + '\n' +
-        "Rotten Tomatoes Rating: " + movie.Ratings[2].Value + '\n' +
+        //"Rotten Tomatoes Rating: " + movie.Ratings[2] + '\n' +
         "URL: " + movie.tomatoURL + '\n' +
         "=====================" + '\n';
       console.log(results);
       fs.appendFile('log.txt', results);
       logOutput(results);
-
+      }
     }
   });
 }
@@ -181,5 +190,5 @@ function doIt() {
 
 //Logger
 function logOutput(logText) {
-  log.info(logText);
+  log.info('\n' + logText);
 }

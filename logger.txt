@@ -1,1 +1,104 @@
 
+2018-05-17 11:12:35 INFO  
+Song: The Sign
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Track Number: 4
+Release Date: 1993
+====================
+ 
+2018-05-17 11:13:23 INFO  
+Song: Broken Halos
+Artist: Chris Stapleton
+Album: From A Room: Volume 1
+Track Number: 1
+Release Date: 2017-05-05
+==========0==========
+ 
+2018-05-17 11:13:23 INFO  
+Song: Halos & Devil Horns
+Artist: Phora
+Album: Angels With Broken Wings
+Track Number: 6
+Release Date: 2015-10-11
+==========1==========
+ 
+2018-05-17 11:13:23 INFO  
+Song: Broken Halos
+Artist: Chris Stapleton
+Album: Country Spring Hits
+Track Number: 3
+Release Date: 2018-04-13
+==========2==========
+ 
+2018-05-17 11:13:23 INFO  
+Song: Broken Halos
+Artist: Chris Stapleton
+Album: Country Cure
+Track Number: 8
+Release Date: 2018-03-02
+==========3==========
+ 
+2018-05-17 11:13:23 INFO  
+Song: Broken Halos
+Artist: Chris Stapleton
+Album: 2018 Award Nominees
+Track Number: 16
+Release Date: 2018-01-19
+==========4==========
+ 
+2018-05-17 11:13:47 INFO  
+If you haven't watched 'Mr. Nobody', then you should: http://www.imdb.com/title/tt0485947/ 
+It's on Netflix!
+=====================
+ 
+2018-05-17 11:14:04 INFO  
+Title: Field of Dreams
+Release Year: 1989
+Plot: An Iowa corn farmer, hearing voices, interprets them as a command to build a baseball diamond in his fields; he does, and the 1919 Chicago White Sox come.
+Country of Production: USA
+Language: English
+Imbd Rating: 7.5
+URL: http://www.rottentomatoes.com/m/field_of_dreams/
+=====================
+ 
+2018-05-17 11:14:30 INFO  
+Song: The Sign
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Track Number: 4
+Release Date: 1993
+==========0==========
+ 
+2018-05-17 11:14:30 INFO  
+Song: All That She Wants
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Track Number: 1
+Release Date: 1993
+==========1==========
+ 
+2018-05-17 11:14:30 INFO  
+Song: The Sign
+Artist: Ace of Base
+Album: Greatest Hits
+Track Number: 1
+Release Date: 2008-11-14
+==========2==========
+ 
+2018-05-17 11:14:30 INFO  
+Song: Don't Turn Around
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Track Number: 2
+Release Date: 1993
+==========3==========
+ 
+2018-05-17 11:14:30 INFO  
+Song: Bellas Regionals: The Sign/Eternal Flame/Turn The Beat Around
+Artist: The Barden Bellas
+Album: Ultimate Pitch Perfect (Original Motion Picture Soundtrack)
+Track Number: 14
+Release Date: 2015-02-10
+==========4==========
+ 
