@@ -1,5 +1,5 @@
 //node modules
-require("dotenv").config();
+const dot = require("dotenv").config();
 const fs = require('fs');
 const request = require('request');
 const keys = require('./keys');
@@ -8,6 +8,14 @@ var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 const client = new Twitter(keys.twitterKeys);
 const cmd = process.argv[2];
+//simple logger
+const SimpleNodeLogger = require('simple-node-logger');
+  opts = {
+    logFilePath: 'logger.txt',
+    timestampFormat: 'YYYY-MM-DD HH:mm:ss'
+  },
+  log = SimpleNodeLogger.createSimpleLogger( opts );
+  log.setLevel('all');
 
 //possible cmds
 switch (cmd) {
@@ -51,6 +59,8 @@ function tweets() {
         console.log(space);
         fs.appendFile('log.txt', tweet);
         fs.appendFile('log.txt', space);
+        logOutput(tweet);
+        logOutput(space);
       }
     } else {
       console.log("error: " + JSON.stringify(error, null, 1));
@@ -74,6 +84,7 @@ function spotifySong() {
         "====================" + '\n';
       console.log(spotifyResults);
       fs.appendFile('log.txt', spotifyResults);
+      logOutput(spotifyResults);
     });
   } else {
     spotify.search({
@@ -95,6 +106,7 @@ function spotifySong() {
             "==========" + i + "==========" + '\n';
           console.log(spotifyResults);
           fs.appendFile('log.txt', spotifyResults);
+          logOutput(spotifyResults);
         }
       }
     });
@@ -110,11 +122,12 @@ function omdb() {
     request(omdbURL, function(error, response, body) {
       if (!error && response.statusCode === 200) {
         var body = JSON.parse(body);
-            let results = "If you haven't watched 'Mr. Nobody', then you should: http://www.imdb.com/title/tt0485947/ " + '\n' +
-              "It's on Netflix!" + '\n' +
-              "=====================" + '\n';
-            fs.appendFile('log.txt', results);
-            console.log(results);
+        let results = "If you haven't watched 'Mr. Nobody', then you should: http://www.imdb.com/title/tt0485947/ " + '\n' +
+          "It's on Netflix!" + '\n' +
+          "=====================" + '\n';
+        fs.appendFile('log.txt', results);
+        console.log(results);
+        logOutput(results);
       };
     });
   } else {
@@ -123,17 +136,18 @@ function omdb() {
       if (!error && response.statusCode === 200) {
         var body = JSON.parse(body);
         for (var i = 0; i < 1; i++) {
-            let results = "Title: " + body.Title + '\n' +
-              "Release Year: " + body.Year + '\n' +
-              "Plot: " + body.Plot + '\n' +
-              "Country of Production: " + body.Country + '\n' +
-              "Language: " + body.Language + '\n' +
-              "Imbd Rating: " + body.imdbRating + '\n' +
-              "Rotten Tomatoes Rating: " + body.Ratings[1] + '\n' +
-              "URL: " + body.tomatoURL + '\n' +
-              "==========" + i + "===========" + '\n';
-            console.log(results);
-            fs.appendFile('log.txt', results);
+          let results = "Title: " + body.Title + '\n' +
+            "Release Year: " + body.Year + '\n' +
+            "Plot: " + body.Plot + '\n' +
+            "Country of Production: " + body.Country + '\n' +
+            "Language: " + body.Language + '\n' +
+            "Imbd Rating: " + body.imdbRating + '\n' +
+            "Rotten Tomatoes Rating: " + body.Ratings[2].Value + '\n' +
+            "URL: " + body.tomatoURL + '\n' +
+            "==========" + i + "===========" + '\n';
+          console.log(results);
+          fs.appendFile('log.txt', results);
+          logOutput(results);
         }
       }
     });
@@ -151,3 +165,8 @@ function doIt() {
     }
   });
 };
+
+//Logger
+function logOutput(logText) {
+  log.info(logText);
+}
