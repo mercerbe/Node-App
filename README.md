@@ -14,12 +14,12 @@ Node.js app utilizing npm modules to take commands and return data on the users 
 
 ## Prerequisites
 
-* node.js [](https://nodejs.org/en/)
+* [node.js](https://nodejs.org/en/)
 * npm modules:
-  `1. Twitter NPM: [](https://www.npmjs.com/package/twitter)`
-  `2. Spotify NPM: [](https://www.npmjs.com/package/node-spotify-api)`
-  `3. Simple logger NPM: [](https://www.npmjs.com/package/simple-node-logger)`
-  `4. Request NPM: [](https://www.npmjs.com/package/request)`
+  1. [Twitter NPM](https://www.npmjs.com/package/twitter)
+  2. [Spotify NPM](https://www.npmjs.com/package/node-spotify-api)
+  3. [Simple logger NPM](https://www.npmjs.com/package/simple-node-logger)
+  4. [Request NPM](https://www.npmjs.com/package/request)
 
 ## Usage
 
