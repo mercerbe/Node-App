@@ -79,11 +79,11 @@ function getTweets() {
     if (!error) {
       for (var i = 0; i < tweets.length; i++) {
         let date = tweets[i].created_at;
-        let tweet = "@ben_codes: " + tweets[i].text + "created at: " + date;
+        let tweet = "@ben_codes: " + tweets[i].text + " created at: " + date;
         let space = "==========" + i + "==========" + '\n';
-        console.log(tweet);
+        console.log(tweet + '\n');
         console.log(space);
-        fs.appendFile('log.txt', tweet);
+        fs.appendFile('log.txt', tweet + '\n');
         fs.appendFile('log.txt', space);
         logOutput(tweet + '\n' + new Date().toJSON());
       }

@@ -145,3 +145,38 @@ Release Date: 2015-02-10
 2018-05-17 17:39:26 INFO  
 @ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt;created at: Mon May 07 20:44:18 +0000 2018
 2018-05-17T21:39:26.507Z 
+2018-05-17 17:43:04 INFO  
+@ben_codes: watching crypto prices after #Consensus2018 created at: Thu May 17 21:42:34 +0000 2018
+2018-05-17T21:43:04.576Z 
+2018-05-17 17:43:04 INFO  
+@ben_codes: testing @nodejs with npm twitter package created at: Thu May 17 21:41:42 +0000 2018
+2018-05-17T21:43:04.577Z 
+2018-05-17 17:43:04 INFO  
+@ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt; created at: Mon May 07 20:44:18 +0000 2018
+2018-05-17T21:43:04.577Z 
+2018-05-17 17:43:47 INFO  
+Song: The Sign
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Track Number: 4
+Release Date: 1993
+====================
+ 
+2018-05-17 17:46:44 INFO  
+@ben_codes: watching crypto prices after #Consensus2018 created at: Thu May 17 21:42:34 +0000 2018
+2018-05-17T21:46:44.867Z 
+2018-05-17 17:46:44 INFO  
+@ben_codes: testing @nodejs with npm twitter package created at: Thu May 17 21:41:42 +0000 2018
+2018-05-17T21:46:44.868Z 
+2018-05-17 17:46:44 INFO  
+@ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt; created at: Mon May 07 20:44:18 +0000 2018
+2018-05-17T21:46:44.868Z 
+2018-05-17 17:47:39 INFO  
+@ben_codes: watching crypto prices after #Consensus2018 created at: Thu May 17 21:42:34 +0000 2018
+2018-05-17T21:47:39.502Z 
+2018-05-17 17:47:39 INFO  
+@ben_codes: testing @nodejs with npm twitter package created at: Thu May 17 21:41:42 +0000 2018
+2018-05-17T21:47:39.503Z 
+2018-05-17 17:47:39 INFO  
+@ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt; created at: Mon May 07 20:44:18 +0000 2018
+2018-05-17T21:47:39.503Z 

@@ -107,3 +107,21 @@ Track Number: 14
 Release Date: 2015-02-10
 ==========4==========
 @ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt;created at: Mon May 07 20:44:18 +0000 2018==========0==========
+@ben_codes: watching crypto prices after #Consensus2018 created at: Thu May 17 21:42:34 +0000 2018==========0==========
+@ben_codes: testing @nodejs with npm twitter package created at: Thu May 17 21:41:42 +0000 2018==========1==========
+@ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt; created at: Mon May 07 20:44:18 +0000 2018==========2==========
+Song: The Sign
+Artist: Ace of Base
+Album: The Sign (US Album) [Remastered]
+Track Number: 4
+Release Date: 1993
+====================
+@ben_codes: watching crypto prices after #Consensus2018 created at: Thu May 17 21:42:34 +0000 2018==========0==========
+@ben_codes: testing @nodejs with npm twitter package created at: Thu May 17 21:41:42 +0000 2018==========1==========
+@ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt; created at: Mon May 07 20:44:18 +0000 2018==========2==========
+@ben_codes: watching crypto prices after #Consensus2018 created at: Thu May 17 21:42:34 +0000 2018
+==========0==========
+@ben_codes: testing @nodejs with npm twitter package created at: Thu May 17 21:41:42 +0000 2018
+==========1==========
+@ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt; created at: Mon May 07 20:44:18 +0000 2018
+==========2==========
