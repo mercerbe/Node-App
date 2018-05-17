@@ -74,7 +74,7 @@ function action(cmd, arg) {
 
 //twitter
 function getTweets() {
-  let params = {q: '@ben_codes', count: 5};
+  var params = {screen_name: 'ben_codes', count: 5};
   client.get('statuses/user_timeline', params, (error, tweets, response) => {
     if (!error) {
       for (var i = 0; i < tweets.length; i++) {
