@@ -180,3 +180,21 @@ Release Date: 1993
 2018-05-17 17:47:39 INFO  
 @ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt; created at: Mon May 07 20:44:18 +0000 2018
 2018-05-17T21:47:39.503Z 
+2018-05-17 17:55:55 INFO  
+@ben_codes: watching crypto prices after #Consensus2018 created at: Thu May 17 21:42:34 +0000 2018
+2018-05-17T21:55:55.962Z 
+2018-05-17 17:55:55 INFO  
+@ben_codes: testing @nodejs with npm twitter package created at: Thu May 17 21:41:42 +0000 2018
+2018-05-17T21:55:55.963Z 
+2018-05-17 17:55:55 INFO  
+@ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt; created at: Mon May 07 20:44:18 +0000 2018
+2018-05-17T21:55:55.963Z 
+2018-05-17 17:57:32 INFO  
+@ben_codes: watching crypto prices after #Consensus2018 created at: Thu May 17 21:42:34 +0000 2018
+2018-05-17T21:57:32.607Z 
+2018-05-17 17:57:32 INFO  
+@ben_codes: testing @nodejs with npm twitter package created at: Thu May 17 21:41:42 +0000 2018
+2018-05-17T21:57:32.607Z 
+2018-05-17 17:57:32 INFO  
+@ben_codes: New Twitter account: &lt;p&gt;Hello World &lt;/p&gt; created at: Mon May 07 20:44:18 +0000 2018
+2018-05-17T21:57:32.608Z 

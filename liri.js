@@ -62,10 +62,9 @@ function action(cmd, arg) {
     default:
     console.log("Use the following comands after entering 'node liri': " + '\n' +
       "1. 'tweets' " + '\n' +
-      "2. 'spotify' followed by any song title (e.g. node app spotify 'rocket man') " + '\n' +
-      "3. 'omdb' followed by any movie title (e.g. node app omdb Robocop) " + '\n' +
-      "4. 'do' displays random song " + '\n' +
-      "REMINDER: any song or movie title with more than one word needs to be in quotes!");
+      "2. 'spotify' followed by any song title (e.g. node liri spotify rocket man) " + '\n' +
+      "3. 'omdb' followed by any movie title (e.g. node liri omdb Robocop) " + '\n' +
+      "4. 'do' displays random song " + '\n');
       return;
   }
 }
